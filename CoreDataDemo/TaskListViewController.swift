@@ -14,8 +14,6 @@ class TaskListViewController: UITableViewController {
         view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         setupNavigationBar()
     }
-
-    
     
     private func setupNavigationBar() {
         
