@@ -8,13 +8,15 @@
 import UIKit
 import CoreData
 
+protocol TaskViewControllerDelegate {
+    func reloadData()
+}
+
 class TaskListViewController: UITableViewController {
 
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     private let cellID = "cell"
     private var tastList: [Task] = []
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,11 +60,11 @@ class TaskListViewController: UITableViewController {
     
     @objc private func addNewTask() {
         let taskVC = TaskViewController()
+        taskVC.delegate = self
         present(taskVC, animated: true)
     }
     
     private func fetchData() {
-      
         let fetchRequest: NSFetchRequest<Task> = Task.fetchRequest()
         do {
             tastList = try context.fetch(fetchRequest)
@@ -88,5 +90,13 @@ extension TaskListViewController {
         content.text = task.title
         cell.contentConfiguration = content
         return cell
+    }
+}
+
+//MARK: TaskViewControllerDelegate
+extension TaskListViewController: TaskViewControllerDelegate {
+    func reloadData() {
+        fetchData()
+        tableView.reloadData()
     }
 }
