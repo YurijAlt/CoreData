@@ -12,7 +12,7 @@
 		C49CB159265063AF00658344 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C49CB157265063AF00658344 /* CoreDataDemo.xcdatamodeld */; };
 		C49CB15B265063B300658344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49CB15A265063B300658344 /* Assets.xcassets */; };
 		C49CB15E265063B300658344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49CB15C265063B300658344 /* LaunchScreen.storyboard */; };
-		C49CB16C26506C3A00658344 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49CB16B26506C3A00658344 /* TaskViewController.swift */; };
+		C4B619902652FFD700D29DF8 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6198F2652FFD700D29DF8 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		C49CB15A265063B300658344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C49CB15D265063B300658344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C49CB15F265063B300658344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C49CB16B26506C3A00658344 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		C4B6198F2652FFD700D29DF8 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +40,7 @@
 		C49CB142265063AF00658344 = {
 			isa = PBXGroup;
 			children = (
+				C4B6198F2652FFD700D29DF8 /* StorageManager.swift */,
 				C49CB14D265063AF00658344 /* CoreDataDemo */,
 				C49CB14C265063AF00658344 /* Products */,
 			);
@@ -58,7 +59,6 @@
 			children = (
 				C49CB14E265063AF00658344 /* AppDelegate.swift */,
 				C49CB152265063AF00658344 /* TaskListViewController.swift */,
-				C49CB16B26506C3A00658344 /* TaskViewController.swift */,
 				C49CB15A265063B300658344 /* Assets.xcassets */,
 				C49CB15C265063B300658344 /* LaunchScreen.storyboard */,
 				C49CB15F265063B300658344 /* Info.plist */,
@@ -137,9 +137,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C49CB153265063AF00658344 /* TaskListViewController.swift in Sources */,
-				C49CB16C26506C3A00658344 /* TaskViewController.swift in Sources */,
 				C49CB159265063AF00658344 /* CoreDataDemo.xcdatamodeld in Sources */,
 				C49CB14F265063AF00658344 /* AppDelegate.swift in Sources */,
+				C4B619902652FFD700D29DF8 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
